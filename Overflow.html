@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style_overflow.css">
+    <title>Fitxa Overflow</title>
+</head>
+<body>
+    <h1><em>Overflow</em></h1>
+    <pre>
+        #div1 {
+            width: 200px;
+            height: 150px;
+            background-color: #ddd;
+            overflow: scroll;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 150px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        #div3 {
+            width: 200px;
+            height: 150px;
+            background-color: #ddd;
+            overflow: auto;
+        }
+
+        #div4 {
+            width: 200px;
+            height: 150px;
+            background-color: #ddd;
+            overflow: visible;
+        }
+    </pre>
+    <div>
+        <div id="div1">
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet urna egestas, auctor tortor eget, pellentesque est. Nullam risus nunc, pulvinar in dapibus eget, mattis eu est. Integer eget accumsan nunc. Nunc porta felis et volutpat mattis. Duis ac metus eget diam scelerisque suscipit eget ut odio. Pellentesque mauris magna, tincidunt porttitor vestibulum a, elementum in nunc. Fusce eu sem vehicula, sagittis tortor et, euismod nisl. Sed dapibus laoreet convallis. Ut et mattis diam. Mauris suscipit felis sed orci malesuada maximus. Etiam vitae orci ut dui suscipit suscipit. Nulla facilisi. Aenean dictum facilisis velit, vitae molestie tortor cursus non. Donec vitae vulputate mi. Nam venenatis libero quis vehicula tincidunt.
+        </div>
+        <div id="div2">
+            2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet urna egestas, auctor tortor eget, pellentesque est. Nullam risus nunc, pulvinar in dapibus eget, mattis eu est. Integer eget accumsan nunc. Nunc porta felis et volutpat mattis. Duis ac metus eget diam scelerisque suscipit eget ut odio. Pellentesque mauris magna, tincidunt porttitor vestibulum a, elementum in nunc. Fusce eu sem vehicula, sagittis tortor et, euismod nisl. Sed dapibus laoreet convallis. Ut et mattis diam. Mauris suscipit felis sed orci malesuada maximus. Etiam vitae orci ut dui suscipit suscipit. Nulla facilisi. Aenean dictum facilisis velit, vitae molestie tortor cursus non. Donec vitae vulputate mi. Nam venenatis libero quis vehicula tincidunt.
+        </div>
+        <div id="div3">
+            3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet urna egestas, auctor tortor eget, pellentesque est. Nullam risus nunc, pulvinar in dapibus eget, mattis eu est. Integer eget accumsan nunc. Nunc porta felis et volutpat mattis. Duis ac metus eget diam scelerisque suscipit eget ut odio. Pellentesque mauris magna, tincidunt porttitor vestibulum a, elementum in nunc. Fusce eu sem vehicula, sagittis tortor et, euismod nisl. Sed dapibus laoreet convallis. Ut et mattis diam. Mauris suscipit felis sed orci malesuada maximus. Etiam vitae orci ut dui suscipit suscipit. Nulla facilisi. Aenean dictum facilisis velit, vitae molestie tortor cursus non. Donec vitae vulputate mi. Nam venenatis libero quis vehicula tincidunt.
+        </div>
+        <div id="div4">
+            4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet urna egestas, auctor tortor eget, pellentesque est. Nullam risus nunc, pulvinar in dapibus eget, mattis eu est. Integer eget accumsan nunc.
+        </div>
+    </div>
+    <h2>Explicació</h2>
+    <p>La propietat <em>Overflow</em> especifica què deu succeïr si el contingut sobrepassa un element de caixa. Aquesta propietat també especifica si s'ha d'escurçar el contingut o afegir barres de desplaçament.</p>
+    <p>En la primera caixa afegirà scroll sempre. En la segona l'excedent s'amaga. En la tercera afegirà una barra d'scroll només en el cas que el contingut sobrepassi. En la quarta sempre serà visible i es pot sortir de la caixa (predeterminat).</p>
+    <h2>Propietats</h2>
+    <ul>
+        <li>Valor per defecte: visible</li>
+        <li>Herencia: no</li>
+        <li>Animable: no</li>
+        <li>Versió: CSS2</li>
+        <li>Sintaxi de JS: object.style.overflow="scroll"</li>
+    </ul>
+</body>
+</html>

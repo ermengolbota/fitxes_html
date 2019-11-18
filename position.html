@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+    body{
+        height:2500px;
+    }
+    #p1{
+        position:static;
+        border: 2px solid black;
+    }
+
+    #p2{
+        position: relative;
+        width: 850px;
+        height: 350px;
+        border: 3px solid red;
+    }
+
+    #p3{
+        bottom:0;
+        position:fixed;
+        border: 2px solid black;
+    }
+
+    #p4{
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 500px;   
+        border: 3px solid blue;
+    }
+
+    #p5{
+        position:sticky;
+        top:10px;
+        border: 2px solid black;
+    }
+
+    </style>
+</head>
+<body>
+    <h3>Oscar y Nacho</h3>
+    <br>
+    <h1>Exemple d'herencia propietat <em>position</em></h1>
+
+    <div id="p1">
+        <pre>
+            .static{
+            position:static;
+            border: 2px solid black;
+            }
+        </pre>
+        <p>
+            Un element en static no es posiciona de cap manera especial, es posiciona d'acord als valors per defecte
+        </p>
+    </div>
+    <br><br><br><br>
+    <div id="p2">
+        <pre>
+            .relative{
+            position:relative;
+            border: 2px solid black;
+            }
+        </pre>
+        <p>
+            Un element en relative permet fer-ne ús de les propietats top, right, bottom, and left i ajustar-lo de la seva posició predeterminada
+        </p>
+        <div id="p4">
+            <pre>
+                .absolute{
+                    position:absolute;
+                    right; 0px;
+                    border: 2px solid red;
+                }
+            </pre>
+            <p>
+                Un element en absolute permet posicionar l'element de manera relativa al ancestre posicionat més proper si no hi ha, agafa el body)
+            </p>
+        </div>
+    </div>
+
+    <div id="p3">
+        <pre>
+            .fixed{
+            bottom:0;
+            position:fixed;
+            border: 2px solid black;
+            }
+        </pre>
+        <p>Un element fixed, es posiciona respecte al viewport, per tant, no es mou encara que facis scroll</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div id="p5">
+        <pre>
+            .sticky{
+            position:sticky;
+            top:10px;
+            border: 2px solid black;
+            }
+        </pre>
+    </div>
+
+    <p>
+        Un element sticky es posiciona segons el scroll que fa l'usuari, és a dir, en aquest cas quan el div arriba a la posició 10px del viewport es queda fixat en aquella posició fins que no tornas a dalt
+    </p>
+</body>
+</html>
