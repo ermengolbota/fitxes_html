@@ -1,0 +1,24 @@
+.pare{
+    border: 6px solid orange;
+    margin: 0 2%;
+  }
+  
+  #fill1, #fill2, #fill3{
+    background-color: #d3d3d3;
+    width:100%;
+  }
+  
+  #general{
+    display:flex;
+  }
+  
+  #fill2{
+    padding: 5px;
+    border: 10px solid blue;
+  }
+  
+  #fill3{
+    box-sizing:border-box;
+    padding: 5px;
+    border: 10px solid blue;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="border-box_estil.css">
+    <title>Border-box</title>
+</head>
+<body>
+    
+    <h1> Fitxa box-sizing</h1>
+<div id="general"> 
+    <div class="pare"> 
+      <h3> Contenidor pare 1 </h3>
+      <div id="fill1">
+        <p> Contenidor fill  </p>
+        <pre>box-sizing: content-box; <br>width: 100%;<br>padding: 5px;</pre>
+      </div>
+    </div>
+
+    <div class="pare"> 
+      <h3> Contenidor pare 2</h3>
+      <div id="fill2">
+        <p> Contenidor fill </p>
+        <pre>box-sizing: content-box;<br>width: 100%;<br>padding: 5px;<br>border: 10px solid blue;</pre>
+      </div>
+    </div>
+    <div class="pare"> 
+      <h3> Contenidor pare 3</h3>
+      <div id="fill3">
+        <p> Contenidor fill </p>
+        <pre>box-sizing: border-box;<br>width: 100%;<br>padding: 0px;<br>border-width: 0px;</pre>
+      </div>
+    </div>
+  </div>
+
+  
+
+<ul>
+  <li> <p>El primer escenari utilitza per defecte box-sizing: content-box. El DIV fill no té padding ni border, i s'adapta perfectament a l'interior del seu pare. </p> </li>
+  <li> <p>El segon escenari utilitza per defecte box-sizing: content-box. El DIV fill se li ha afegit padding i un border. El fill es vessa fora del pare perquè el seu ample es calcula amb només el contingut: llavors s'afegeix el farciment i la vora per fer l'amplada representada. </p> </li>
+  <li> <p> El tercer escenari utilitza box-sizing: border-box. El DIV fill ara s'adapta perfectament a l'interior del seu pare, ja que el seu width: 100% representa el farciment i la vora </p> </li>
+</ul>
+
+</body>
+</html>
