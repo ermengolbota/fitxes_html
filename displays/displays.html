@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"href="mystyle.css">
+    <title>M09_Ficha_Block-inline_Block</title>
+</head>
+<body>
+
+<h2>Autores: Alex Revesado y Adrián Postigo</h2>
+    
+<h1>Ficha esplicativa de los atributos inline Block y el atributo Block</h1>
+
+<p>display es la propiedad más importante para controlar estructuras. Cada elemento tiene un valor de display por defecto dependiendo de qué tipo de elemento sea. El valor por defecto para la mayoría de los elementos es usualmente block (de bloque) o inline (en línea). Un elemento que es block es comunmente llamado elemento block-level. Un elemento inline siempre es llamado elemento inline. </p>
+
+<h2>Propiedad css Display Inline-Block</h2>
+
+<div class="categoria">
+    <p>Puedes crear una cuadrícula de cajas que llene el navegador armoniosamente. Esto ha sido posible por mucho tiempo usando float, pero ahora con inline-block es aún más fácil.</p><br>
+    <li>También puedes usar el valor inline-block para estructurar un sitio, pero hay algunas cosas que debes tener en cuenta: </li><br>
+    <li>Los elementos inline-block son influenciados por la propiedad vertical-align, la cual quizas quieras establecer como top.</li><br>
+    <li>Necesitas establecer el ancho de cada columna. </li><br>
+    <li>Si hay un espacio en blanco entre columnas en tu HTML, habrá un vacío entre ellas</li><br>
+    <p>Ejemplo:</p><br>
+    <div class="caixa" id="ex3">
+        <h1>INLINE-BLOCK</h1>
+        <div class="exemple">
+          <div class="inline-block">Aquest div té un display inline-block</div>
+          <div class="inline-block">Aquest div té un display inline-block</div>
+        </div>
+        <div class="codi">
+          <code>
+            .inline-block{</br>
+        display: inline-block;</br>
+        width: 400px;</br>
+        color:white;</br>
+        background-color: blue;</br>
+        padding: 10px;</br>
+      }
+          </code>
+        </div>
+        <div class="parraf">
+          <p>L'inline-block fa el mateix que inline, amb la diferència de que permet modificar l'amplada i l'alçada, per tant ara si fa cas al 400 pixels d'amplada.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<h2>Propiedad css Display Block</h2>
+
+<div class="categoria">
+    <p>El div es el elemento block-level estándar. Un elemento block-level comienza en una nueva línea y se estira hasta la derecha e izquierda tan lejos como pueda. Otros elementos block-level muy comunes son p y form, y algunos nuevos en HTML5 son header, footer y section. </p><br>
+    <p>Ejemplo:</p><br>
+    <div class="caixa" id="ex2">
+        <h1>BLOCK</h1>
+        <div class="exemple">
+          <div class="block">Aquest div té un display block</div>
+          <div class="block">Aquest div té un display block</div>  
+        </div>
+        <div class="codi">
+          <code>
+            .block{</br>
+        display: block;</br>
+        width: 400px;</br>
+        color:white;</br>
+        background-color: blue;</br>
+        padding: 10px;</br>
+      }
+          </code>
+        </div>
+        <div class="parraf">
+          <p>El block no permet centrar l'element ni posar-ne dos a una mateixa linia.</p>
+        </div>
+      </div>
+</div>
+
+<h2>Propiedad css Display inline</h2>
+
+<div class="categoria">
+    <p>El span es el elemento inline estándar. Un elemento inline puede contener algo de texto dentro de un párrafo &lt;span&gt; como esto &lt;/span&gt; sin interrumpir el flujo del párrafo. El elemento a es el elemento inline más común, ya que se usa para links. </p><br>
+    <p>Ejemplo:</p><br>
+    <div class="caixa" id="ex1">
+        <h1>INLINE</h1>
+        <div class="exemple">
+          <div class="inline">Aquest div té un display inline</div>
+          <div class="inline">Aquest div té un display inline</div>
+        </div>
+        <div class="codi">
+          <code>
+            .inline{</br>
+        display: inline;</br>
+        width: 400px;</br>
+        color:white;</br>
+        background-color: blue;</br>
+        padding: 10px;</br>
+      }
+          </code>
+    
+        </div>
+        <div class="parraf">
+          <p>El display inline no permet modificar la mida dels elements, per tant no fa cas als 400 pixels d'amplada.</p>
+          <p>Al no estar en bloc, permet dos elements a una mateixa linia.</p>
+          <p>Està aliniat al centre del seu contenidor.</p>
+        </div>
+      </div>
+</div>
+
+</body>
+</html>
