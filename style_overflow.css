@@ -1,0 +1,38 @@
+body {
+    margin: 0 20%;
+    font-size: 1.25rem;
+}
+
+div {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+#div1 {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    overflow: scroll;
+}
+
+#div2 {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+#div3 {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    overflow: auto;
+}
+
+#div4 {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    overflow: visible;
+}
