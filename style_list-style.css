@@ -1,0 +1,55 @@
+body {
+    margin: 0 20%;
+    font-size: 1.25rem;
+}
+
+.outside {
+    list-style-position: outside;
+}
+
+.outside li {
+    border: 1px solid black;
+}
+
+.inside {
+    list-style-position: inside;
+}
+
+.inside li {
+    border: 1px solid black;
+}
+
+.img {
+    list-style-image: url('iam.png');
+}
+
+pre {
+    background-color: lightgray;
+}
+.negreta{
+    font-weight: bold;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.greek {
+    list-style-type: lower-greek;
+}
+
+.roman {
+    list-style-type: lower-roman;
+}
+
+.georgian {
+    list-style-type: georgian;
+}
