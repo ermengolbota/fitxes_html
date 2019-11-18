@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="before.css">
+    </head>
+    <body>
+        <h1>Propietat: Before</h1>
+        <h3>Definició:</h3>
+            <p>
+                El selector inserta alguna cosa abans de cada element seleccionat. Está integrat per defecte. Sovint s'utililtza per afegir contingut cosmètic a un element.
+            </p>
+            <p>
+                La etiqueta before no es aplicable a elements img i br.
+            <p>
+            <p>
+                Utilitza la propietat <b>content</b> per a especificar el contingut a insertar.
+            </p>
+        <h3>Sintaxis:</h3>
+        <h3>Aplicable per a CSS3:</h3>
+            <pre>::before {
+    css declarations;
+}</pre>
+        <h3>Aplicable per a CSS2:</h3>
+        <pre>:before {
+    css declarations;
+}</pre>
+        <h3>Exemple:</h3>
+            <pre>h4::before { 
+    content: "Read this -";
+    color: red;
+    font-weight: bold;
+}
+            </pre>
+        <h4>My name is Donald</h4>
+        <h4>I live in Ducksburg</h4>
+    </body>
+</html>
