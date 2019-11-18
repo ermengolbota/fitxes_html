@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Selector enèssim</title>
+</head>
+<body>
+    <h2>Selector enèssim:  :nth-of-type(n)</h2>
+    <p>El selector :nth-of-type(n) escull cada element que és el fill número n, del tipus escollit, del seu pare. On n pot ser un número, una fórmula o una paraula clau.</p>
+    <h3>Exemples</h3>
+    <pre>
+            body{
+                margin: 0 20%;
+                font-size: 1.25rem;
+            }
+            span:nth-of-type(even){
+                color:blue;
+            }
+            span:nth-of-type(3n){
+                font-weight:bold;
+            }
+            span:nth-of-type(1){
+                font-style: italic;
+            }
+            li:nth-of-type(even){
+                background-color: gray;
+            }
+            
+    </pre>
+    <h4>Cas 1</h4>
+    <p>Aquest es un paragraf que conte<span> molts spans </span> i seleccionem tots els que estan en una posició parella 
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    <span>span:nth-of-type(even) </span><span> aquesta no és una posició parella </span>
+    </p>
+    <h4>Explicació</h4>
+    <p>Al pasar el parametre 1 al selector span:nth-of-type(1) escull el primer span d'un element pare, en canvi al pasar el parametre even al selector span:nth-of-type(even) escull tots els parells, i al pasar el parametre 3n al selector span:nth-of-type(3n) escull tots els múltiples de 3. Per tant en aquest exemple tots els parells es mostren de color blau, tots els múltiples de tres en negreta i els múltiples de 6 blaus i en negreta. Si tinguèssim un altre element que tingués mes d'un span com a fill, hagués succeït el mateix. </p>
+    <h4>Cas 2</h4>
+    <ul>
+            <li>un</li>
+            <li>dos</li>
+            <li>tres</li>
+            <li>quatre</li>
+            <li>cinc</li>
+            <li>sis</li>
+            <li>set</li>
+            <li>vuit</li>
+            <li>nou</li>
+            <li>deu</li>
+            <li>once</li>
+            <li>dotze</li>
+        </ul>
+        <p>Aquest és un altre exemple d'even, en aquest cas pel que fa als fills li del pare, i generem un zebrejat</p>
+</body>
+</html>
